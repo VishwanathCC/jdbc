@@ -1,15 +1,24 @@
+#app:
+#  datasource:
+#    main:
+#      driver-class-name: org.postgresql.Driver
+#      jdbc-url: jdbc:postgresql://localhost:5432/amigoscode
+#      password: 'password'
+#      pool-size: 30
+#      username: amigoscode
 app:
   datasource:
     main:
-      driver-class-name: org.postgresql.Driver
-      jdbc-url: jdbc:postgresql://localhost:5432/amigoscode
-      password: 'password'
+      jdbc-url: jdbc:mysql://localhost:3306/amigoscode
+      username: root
+      password: root
+      driver-class-name: com.mysql.cj.jdbc.Driver
       pool-size: 30
-      username: amigoscode
 
 server:
   error:
     include-binding-errors: always
     include-message: always
+
 
 

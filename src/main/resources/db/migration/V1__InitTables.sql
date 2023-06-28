@@ -1,0 +1,6 @@
+CREATE TABLE movie (
+    id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    name TEXT(255) NOT NULL,
+    release_date DATE NOT NULL,
+    UNIQUE (name(255))
+);
